@@ -16,7 +16,10 @@ console.log("fuera del if")
 
 */
 
+
 /*
+
+
 
 if(condición){
     bloque de instrucciones
@@ -24,6 +27,8 @@ if(condición){
         bloque de instrucciones
         }
 */
+
+
 
 /*
 
@@ -49,6 +54,21 @@ if (edad < 13){
     console.log("Eres un adulto mayor")
 }
 */
+
+
+console.log("EJERCICIO 1")
+
+let numero=-12;
+
+if(numero < 0){
+    console.log("Es un numero negativo")
+  }else if (numero > 0){
+    console.log("Es un numero positivo")
+
+  }else{
+    console.log("Es el número 0")
+  }
+
 /*
 
 switch(expresión){
@@ -146,7 +166,37 @@ let mensaje = (edad>=18) ? "Eres mayor de edad" : "Eres menor de edad"
 console.log(mensaje)
 */
 
+console.log("EJERCICIO 2")
+
+let edad=1;
+
+let mensaje = (edad >= 18) ? "Puede votar" : "No puede votar"
+
+console.log(mensaje)
+
+console.log("EJERICIO 3")
+
+let num1 = 40;
+let num2 = 20;
+
+if (num1 > num2) {
+    console.log("El mayor es " + num1);
+}
+
+else if(num2 > num1){
+    console.log("El mayor es " + num2);
+
+}
+else{
+    console.log("Ambos números son iguales");
+}
 /*
+
+
+
+
+
+
 
 let esCliente = false;
 let esAdulto = false;
@@ -159,7 +209,7 @@ let mensaje= (esCliente == true)
      console.log(mensaje)
 
 */
-
+/*
 let esCliente = false;
 let mensaje;
 
@@ -172,3 +222,29 @@ let mensaje;
     (mensaje = "debe pagar 20.00€"),
     console.log(mensaje)
   )
+    */
+
+console.log("EJERCICIO 4")
+let numeroej4 = 22;
+if(numeroej4 % 5 === 0){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+console.log("EJERCICIO 4 Versión mas corta")
+let numeroej4v2 = 20;
+let resultado = (numeroej4v2 % 5 === 0) ? true : false;
+console.log(resultado);
+
+console.log("EJERCICIO 5")
+let nota = 8;
+if (nota >= 9){
+    console.log("Excelente");
+}else if(nota >= 7){
+    console.log("Buena");
+}else if(nota >= 5){
+    console.log("Regular")
+}else{
+    console.log("Insuficiente");
+}
