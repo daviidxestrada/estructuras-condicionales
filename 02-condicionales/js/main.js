@@ -69,6 +69,21 @@ if(numero < 0){
     console.log("Es el número 0")
   }
 
+console.log("EJERCIO 1 ALTERNATIVA")
+
+let num = 0;
+let mensajeej1;
+if(num > 0){
+    mensajeej1 = "El número es positivo"
+} else if (num < 0) {
+    mensajeej1 = "El número es negativo"
+} else { 
+    mensajeej1 = "El número es cero"
+}
+
+console.log(mensajeej1)
+
+
 /*
 
 switch(expresión){
@@ -174,6 +189,18 @@ let mensaje = (edad >= 18) ? "Puede votar" : "No puede votar"
 
 console.log(mensaje)
 
+console.log("EJERCICIO 2 ALTERNATIVA IF")
+let edadej2 = 16;
+let mensajeej2;
+
+if (edadej2 >= 18){
+    mensajeej2 = "Puedes votar"
+} else {
+    mensajeej2 = "No puedes votar"
+}
+
+console.log(mensajeej2)
+
 console.log("EJERICIO 3")
 
 let num1 = 40;
@@ -190,6 +217,23 @@ else if(num2 > num1){
 else{
     console.log("Ambos números son iguales");
 }
+
+console.log("EJERCICIO 3 ALTERNATIVA")
+let num1ej3 = 15;
+let num2ej3 = 3;
+let mensajeej3;
+
+if (num1ej3 > num2ej3) {
+    // mensajeej3 = num1ej3 + " es mayor que " + num2ej3;
+    mensajeej3 = `${num1ej3} es mayor que ${num2ej3}`
+} else if (num2ej3 > num1ej3) {
+    mensajeej3 = num2ej3 + " es mayor que " + num1ej3;
+}else{
+    mensajeej3 = "Ambos numeros son iguales";
+}
+
+console.log(mensajeej3)
+
 /*
 
 
@@ -232,6 +276,18 @@ if(numeroej4 % 5 === 0){
     console.log(false);
 }
 
+console.log("EJERCICIO 4 Versión Intermedia, la del profesor")
+let numej4profe = 11;
+let resultadoprofe;
+
+if (numej4profe % 5 == 0) {
+    resultadoprofe = true;
+} else {
+    resultadoprofe = false;
+}
+
+console.log(resultadoprofe)
+
 console.log("EJERCICIO 4 Versión mas corta")
 let numeroej4v2 = 20;
 let resultado = (numeroej4v2 % 5 === 0) ? true : false;
@@ -248,3 +304,49 @@ if (nota >= 9){
 }else{
     console.log("Insuficiente");
 }
+
+console.log("EJERCICIO 5 ALTERNATIVA PROFE")
+
+let notaprofe = 10;
+let calificacion;
+
+// if(notaprofe <= 10 && nota >=0 ){
+
+
+
+// if (notaprofe >= 9) {
+//     calificacion = "excelente"
+// } else if (notaprofe >= 7) {
+//     calificacion = "buena"
+// } else if (nota >=5) {
+//     calificacion = "regular"
+// } else {
+//     calificacion = "insuficiente"
+// }
+
+// } else {
+//     calificacion = "Nota no válida"
+// }
+
+// console.log(calificacion)
+
+//  if(notaprofe <= 10 && nota >=0 ){
+     if(notaprofe <= 10 && nota >=0 ){
+
+
+
+if (notaprofe < 5) {
+    calificacion = "insuficiente"
+} else if (notaprofe >= 5 && notaprofe < 7) {
+    calificacion = "regular"
+} else if (notaprofe >= 7 && notaprofe < 9) {
+    calificacion = "buena"
+} else {
+    calificacion = "excelente"
+}
+
+} else {
+    calificacion = "Nota no válida"
+}
+
+console.log(calificacion)
